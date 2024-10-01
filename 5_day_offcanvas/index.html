@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="fonts/remixicon.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg border">
+            <div class="container">
+                    <a href="" class="navbar-brand h1">Glossary</a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="navbar-nav m-auto" >
+                            <li class="nav-item"><a class="nav-link">Home</a></li>
+                            <li class="nav-item"><a class="nav-link">Feature</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"  data-bs-auto-close="outside" data-bs-toggle="dropdown" data-bs-target="#first">Product</a>
+                            <ul class="dropdown-menu" id="first">
+                                <li><a href="" class="dropdown-item">Soap</a></li>
+                                <li><a href="" class="dropdown-item">nirma-powder</a></li>
+                                <li><a href="" class="dropdown-item">Shampoo</a></li>
+                                <li class="dropdown dropend" >
+                                    <a class="dropdown-item dropdown-toggle"  data-bs-toggle="dropdown" data-bs-target="#second">Colgate</a>
+                                <ul class="dropdown-menu" id="second">
+                                    <li><a class="dropdown-item">Closeup</a></li>
+                                    <li><a class="dropdown-item">Max fresh</a></li>
+                                    <li><a class="dropdown-item">Dantkanti</a></li>
+                                    
+                                </ul>
+                            </li>
+                            </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link">Contact</a></li>  
+                        </ul>
+                        <a href="#sidebar" class="btn btn-outline-secondary " data-bs-toggle="offcanvas">
+                            <span class="navbar-toggler-icon"></span>
+                        </a>
+                        <button class="btn btn-info ms-5" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+
+                    </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+
+
+    <!-- ------------------------------------------------------------------------offcanvas-------------------------------------------------------------------------------------------------------- -->
+   <section>
+    <div class="offcanvas offcanvas-start" id="sidebar">
+        <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Glossary
+                </h1>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li>welcome to Glossary store</li>
+                    <li>welcome to Glossary store</li>
+                    <li>welcome to Glossary store</li>
+                    <li>welcome to Glossary store</li>
+                    <li>welcome to Glossary store</li>
+                </ul>
+            </div>
+            <div class="offcanvas-footer p-2">
+                <button class="btn btn-outline-warning ms-auto" data-bs-target="#popup" data-bs-toggle="modal">click</button>
+            </div>
+        </div>
+   </section>
+
+     <!-- ------------------------------------------------------------------------modal-------------------------------------------------------------------------------------------------------- -->
+      <section>
+        <div class="modal" id="popup">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>modal</h3>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, dolor.
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary ">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+ <!-- ------------------------------------------------------------------------login form-------------------------------------------------------------------------------------------------------- -->
+
+<section>
+    <div class="modal" id="login">
+        <div class="modal-dialog">
+            <div class="modal-content p-5">
+                <div class="modal-header">
+                    <h3>Login</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group my-5">
+                        <span class="input-group-text">👤</span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="name" placeholder="enter name">
+                            <label for="name">Enter username</label>
+                        </div>
+                    </div>
+                    <div class="input-group my-5">
+                        <span class="input-group-text">🔑</span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="name" placeholder="enter password">
+                            <label for="name">Enter password</label>
+                        </div>
+                    </div>
+                  
+                        <button class="btn btn-warning m-auto w-100"data-bs-toggle="collapse" data-bs-target="#alert">Login</button>
+                
+                </div>
+                <div class="modal-footer">
+                   
+                    <div class="row">
+                        <div class="col-12 ">sign up with</h6></div>
+                        <div class="col fs-3"><i class="ri-facebook-circle-fill"></i></div>
+                        <div class="col fs-3"><i class="ri-instagram-fill"></i></div>
+                        <div class="col fs-3"><i class="ri-twitter-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ------------------------------------------------------------------------alert message-------------------------------------------------------------------------------------------------------- -->
+<section>
+    <div class="alert alert-primary collapse  position-fixed end-0 top-0 m-5 "  role="alert" id="alert">
+        <h4>login sucessfully</h4>
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+</section>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
