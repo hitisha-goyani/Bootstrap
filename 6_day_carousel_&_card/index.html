@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <!-- ---------------------------------------------------------carousel section start-------------------------------------------------------------------------- -->
+<section>
+    <h1 class="text-center my-5">carosel section</h1>
+    <div class="container my-5">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel" data-bs-pause="false" data-bs-delay='{"show":0,"hide":150}'>
+            <div class="carousel-inner slide">
+                <div class="carousel-item bg-secondary active" data-bs-interval="1000">
+                    <div class="p-5" style="height: 500px;">
+                        <h2 class="display-1">slider 1</h2>
+                    </div>
+                </div>
+                <div class="carousel-item bg-secondary active" data-bs-interval="1000">
+                    <div class="p-5" style="height: 500px;">
+                        <h2 class="display-1">slider 2</h2>
+                    </div>
+                </div>
+                <div class="carousel-item bg-secondary active" data-bs-interval="1000">
+                    <div class="p-5" style="height: 500px;">
+                        <h2 class="display-1">slider 3</h2>
+                    </div>
+                </div>
+                <div class="carousel-item bg-secondary active" data-bs-interval="1000">
+                    <div class="p-5" style="height: 500px;">
+                        <h2 class="display-1">slider 4</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="slider" data-bs-slide-to="0"></button>
+                <button data-bs-target="slider" data-bs-slide-to="1"></button>
+                <button data-bs-target="slider" data-bs-slide-to="2"></button>
+                <button data-bs-target="slider" data-bs-slide-to="3"></button>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>   
+    </div>
+</section>
+<hr>
+ <!-- ---------------------------------------------------------carousel section end-------------------------------------------------------------------------- -->
+
+
+
+
+
+  <!-- ---------------------------------------------------------card section start-------------------------------------------------------------------------- -->
+   <section>
+    <h1 class="text-center my-5">card section</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <img src="img/1.jpeg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Sunset</h4>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, labore.
+                    </div>
+                    <div class="card-header">
+                        <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#show">Show more</button>
+                    </div>
+                    <ul class="list-group list-group-flush collapse" id="show">
+                        <li class="list-group-item">for now offer</li>
+                        <li class="list-group-item">for now offer</li>
+                        <li class="list-group-item">for now offer</li>
+                        <li class="list-group-item">for now offer</li>
+                        <li class="list-group-item">for now offer</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn btn-outline-primary">Add to card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <hr>
+
+
+
+
+
+
+    <!-- ---------------------------------------------------------card section end-------------------------------------------------------------------------- -->
+    
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
