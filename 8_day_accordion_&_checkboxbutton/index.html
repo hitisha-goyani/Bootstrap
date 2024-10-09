@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="container my-5  ">
+            <div class="accordion" id="parent">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#col">first</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="col" data-bs-parent="#parent">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem tenetur, commodi
+                            repellendus alias voluptate reiciendis!
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#col1">second</button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="col1" data-bs-parent="#parent">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem tenetur, commodi
+                                repellendus alias voluptate reiciendis!
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#col3">third</button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="col3" data-bs-parent="#parent">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem tenetur, commodi
+                                    repellendus alias voluptate reiciendis!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------------------checkbox button---------------------------------------------------------------------------------------------------------------------- -->
+    <section>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-4 shadow p-4 rounded-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="username" placeholder="enter name">
+                        <label for="username">username</label>
+                    </div>
+                    <br/>
+                    <div class="input-group">
+                        
+                            <span class="input-group-text">📧</span>
+                            <div class="form-floating">
+                            <input type="text" class="form-control" id="username" placeholder="enter email">
+                            <label for="username" class="email">email</label>
+                    </div>
+                    </div>
+                    <br>
+                    <select name="" id="" class="form-select">
+                        <option value="">red</option>
+                        <option value="">green</option>
+                        <option value="">pink</option>
+                        <option value="">yellow</option>
+                    </select>
+                    <br>
+                   <button class=" btn btn-dark">Login</button>
+                  
+                </div>
+                <div class="col-lg-4 shadow p-4 rounded-3">
+                    <div class="form-check form-swich">
+                        <label for="" class="form-check-label">checkbox</label>
+                        <input type="checkbox" class="form-check-input">
+                    
+            </div>
+            <br>
+            <div class="form-check">
+                <input type="radio" class="btn-check" id="checkbtn1" name="check" >
+                <label for="checkbtn1" class="btn btn-outline-success">click1</label>
+
+                <input type="radio" class="btn-check" id="checkbtn2" name="check" >
+                <label for="checkbtn2" class="btn btn-outline-success">click2</label>
+
+                <input type="radio" class="btn-check" id="checkbtn3" name="check" >
+                <label for="checkbtn3" class="btn btn-outline-success">click3</label>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
