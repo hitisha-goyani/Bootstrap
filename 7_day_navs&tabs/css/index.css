@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.fadetop{
+    animation: fadetop 1s linear;
+}
+@keyframes fadetop{
+    from{
+        transform: translateX(-50px);
+    }
+    to{
+        transform:translateX(0px);
+    }
+}
