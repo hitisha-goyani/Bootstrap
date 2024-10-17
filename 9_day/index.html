@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <nav class="page navigation example my-5">
+        <ul class="pagination">
+        <li class="page-item"><a href="#" class="page-link">previous</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">next</a></li>
+        </ul>
+    </nav>
+    <div class="container"> <div class="progress">
+        <div class="progress-bar w-75 bg-danger">75%</div>
+    </div>
+</div>
+
+
+
+<nav class="navbar px-1 mb-2 my-5 border" id="example2">
+    <a class="navbar-brand">logo </a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#s1" class="nav-link">home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#s2" class="nav-link">about</a>
+        </li>
+        <li class="nav-item">
+            <a href="#s3" class="nav-link">services</a>
+        </li>
+        <li class="nav-item">
+            <a href="#s4" class="nav-link">contact </a>
+        </li>
+    </ul>
+</nav>
+
+<div data-bs-spy="scroll" data-bs-target="#example2"  class="scrollspy-example  p-3 rounded-2 "  data-bs-smooth-scroll="true">
+
+    <div id="s1"><h4 id="scrollspyHeading1">First heading</h4>
+    <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quidem!</p></div>
+    
+    <div id="s2"> <h4 id="scrollspyHeading2">Second heading</h4>
+    <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quas?</p></div>
+
+    <div id="s3"><h4 id="scrollspyHeading3">Third heading</h4>
+    <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, eos?</p></div>
+    
+    <div id="s4"><h4 id="scrollspyHeading4">Fourth heading</h4>
+    <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, expedita!</p></div>
+    
+    
+    
+   
+  </div>
+   
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
