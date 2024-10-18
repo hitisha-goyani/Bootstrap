@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagination</title>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
     <nav class="page navigation example my-5">
@@ -92,6 +94,59 @@ style="height: 300px;">
   </div>
 </div>
 
+<div class="container">
+    <div class="spinner-border tetx-primary">
+    <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-secondary" role="status">
+    <span class="visually-hidden">loading...</span>
+  </div>
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">loading...</span>
+  </div>
+  <div class="spinner-grow text-danger"></div>
+  <div class="spinner-grow text-danger"></div>
+  <button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+    <span class="visually-hidden" role="status">Loading...</span>
+  </button>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-3">
+            <div class="shadow border animate__animated animate__bounceInUp" data-aos="fade-up-right">
+                <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nihil rerum sapiente ex repudiandae! Quod?</p>
+
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="shadow border animate__animated animate__bounceInUp" >
+                <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nihil rerum sapiente ex repudiandae! Quod?</p>
+
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="shadow border" data-aos="fade-up" >
+                <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nihil rerum sapiente ex repudiandae! Quod?</p>
+
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="shadow border" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nihil rerum sapiente ex repudiandae! Quod?</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 
   <script>
     const toastTrigger = document.getElementById('liveToastBtn')
